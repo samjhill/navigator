@@ -53,15 +53,29 @@ php -S localhost:8000
 
 ## GitHub Pages Setup
 
-This repository is configured for GitHub Pages. To enable it:
+This repository is configured for GitHub Pages with automated deployment via GitHub Actions. To enable it:
 
-1. Go to your repository settings on GitHub
+### Option 1: GitHub Actions (Recommended - Automated)
+
+1. Go to your repository settings on GitHub: https://github.com/samjhill/navigator/settings/pages
+2. Navigate to **Pages** in the left sidebar
+3. Under **Source**, select **GitHub Actions**
+4. The workflow will automatically deploy on every push to `main`
+
+### Option 2: Static File Deployment (Simple)
+
+If you prefer not to use GitHub Actions:
+
+1. Go to your repository settings on GitHub: https://github.com/samjhill/navigator/settings/pages
 2. Navigate to **Pages** in the left sidebar
 3. Under **Source**, select **Deploy from a branch**
 4. Choose **main** branch and **/ (root)** folder
 5. Click **Save**
+6. Delete the `.github/workflows/deploy.yml` file (optional, if not using Actions)
 
 Your site will be available at `https://samjhill.github.io/navigator/` (or your custom domain if configured)
+
+**Note:** The first deployment may take a few minutes. After enabling Pages, the workflow will run automatically on the next push, or you can manually trigger it from the Actions tab.
 
 ## File Structure
 
