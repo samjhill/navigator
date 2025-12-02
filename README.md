@@ -2,26 +2,33 @@
 
 A modern, responsive website for Navigator Academy - Business Valuation Training Program.
 
+🌐 **Live Site**: [View on GitHub Pages](https://samjhill.github.io/navigator/)
+
 ## Features
 
 - **Modern Design**: Clean, professional design with gradient accents and smooth animations
 - **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
 - **Smooth Scrolling**: Enhanced navigation with smooth scroll behavior
 - **Interactive Elements**: Hover effects, animations, and mobile menu
-- **SEO Friendly**: Semantic HTML structure
+- **SEO Friendly**: Complete meta tags, Open Graph, and structured data
+- **Accessible**: ARIA labels, focus states, skip links, and keyboard navigation
+- **GitHub Pages Ready**: Configured for easy deployment
 
 ## Getting Started
 
-### Prerequisites
+### Viewing the Website
 
-No special prerequisites needed - this is a static website that can be opened directly in a browser.
+The website is live on GitHub Pages: **https://samjhill.github.io/navigator/**
 
-### Installation
+### Local Development
 
-1. Clone or download this repository
-2. Open `index.html` in your web browser
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:samjhill/navigator.git
+   cd navigator
+   ```
 
-That's it! The website is ready to use.
+2. Open `index.html` in your web browser, or use a local server (recommended):
 
 ### Local Development Server (Optional)
 
@@ -44,13 +51,27 @@ npx http-server -p 8000
 php -S localhost:8000
 ```
 
+## GitHub Pages Setup
+
+This repository is configured for GitHub Pages. To enable it:
+
+1. Go to your repository settings on GitHub
+2. Navigate to **Pages** in the left sidebar
+3. Under **Source**, select **Deploy from a branch**
+4. Choose **main** branch and **/ (root)** folder
+5. Click **Save**
+
+Your site will be available at `https://samjhill.github.io/navigator/` (or your custom domain if configured)
+
 ## File Structure
 
 ```
-navigator-academy/
+navigator/
 ├── index.html      # Main HTML file
 ├── styles.css      # Stylesheet with all styling
 ├── script.js       # JavaScript for interactivity
+├── .nojekyll       # Prevents Jekyll processing
+├── .gitignore      # Git ignore rules
 └── README.md       # This file
 ```
 
