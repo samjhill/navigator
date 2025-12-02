@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563eb'%3E%3Cpath d='M3 3v18h18M7 12l4-4 4 4 6-6'/%3E%3C/svg%3E">
     
     <!-- Structured Data -->
@@ -392,46 +393,100 @@
             </div>
             <div class="faq-grid">
                 <div class="faq-item">
-                    <div class="faq-icon">
-                        <svg width="24" height="24"><use href="#icon-question"></use></svg>
+                    <button class="faq-toggle" aria-expanded="false" aria-controls="faq-1">
+                        <div class="faq-icon">
+                            <svg width="24" height="24"><use href="#icon-question"></use></svg>
+                        </div>
+                        <h3 class="faq-question">Who is this program designed for?</h3>
+                        <span class="faq-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-1">
+                        <p class="faq-answer">Our program is designed for students at all levels—from beginners exploring finance careers to those with some background looking to advance their valuation skills. We include foundational reviews to ensure everyone can follow along.</p>
                     </div>
-                    <h3 class="faq-question">Who is this program designed for?</h3>
-                    <p class="faq-answer">Our program is designed for students at all levels—from beginners exploring finance careers to those with some background looking to advance their valuation skills. We include foundational reviews to ensure everyone can follow along.</p>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-icon">
-                        <svg width="24" height="24"><use href="#icon-book"></use></svg>
+                    <button class="faq-toggle" aria-expanded="false" aria-controls="faq-2">
+                        <div class="faq-icon">
+                            <svg width="24" height="24"><use href="#icon-book"></use></svg>
+                        </div>
+                        <h3 class="faq-question">What materials do I need?</h3>
+                        <span class="faq-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-2">
+                        <p class="faq-answer">All materials are provided. You'll need a laptop with Excel installed. We'll provide templates, case studies, and all necessary resources for hands-on practice.</p>
                     </div>
-                    <h3 class="faq-question">What materials do I need?</h3>
-                    <p class="faq-answer">All materials are provided. You'll need a laptop with Excel installed. We'll provide templates, case studies, and all necessary resources for hands-on practice.</p>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-icon">
-                        <svg width="24" height="24"><use href="#icon-check"></use></svg>
+                    <button class="faq-toggle" aria-expanded="false" aria-controls="faq-3">
+                        <div class="faq-icon">
+                            <svg width="24" height="24"><use href="#icon-check"></use></svg>
+                        </div>
+                        <h3 class="faq-question">Will I receive a certificate?</h3>
+                        <span class="faq-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-3">
+                        <p class="faq-answer">Yes, participants receive a certificate of completion that demonstrates your training in business valuation and financial modeling—valuable for your resume and LinkedIn profile.</p>
                     </div>
-                    <h3 class="faq-question">Will I receive a certificate?</h3>
-                    <p class="faq-answer">Yes, participants receive a certificate of completion that demonstrates your training in business valuation and financial modeling—valuable for your resume and LinkedIn profile.</p>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-icon">
-                        <svg width="24" height="24"><use href="#icon-trending"></use></svg>
+                    <button class="faq-toggle" aria-expanded="false" aria-controls="faq-4">
+                        <div class="faq-icon">
+                            <svg width="24" height="24"><use href="#icon-trending"></use></svg>
+                        </div>
+                        <h3 class="faq-question">How does this help my career?</h3>
+                        <span class="faq-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-4">
+                        <p class="faq-answer">You'll gain practical skills in valuation methodologies, financial modeling, and interview preparation. Our program also includes networking strategies and career development guidance to help you stand out to employers.</p>
                     </div>
-                    <h3 class="faq-question">How does this help my career?</h3>
-                    <p class="faq-answer">You'll gain practical skills in valuation methodologies, financial modeling, and interview preparation. Our program also includes networking strategies and career development guidance to help you stand out to employers.</p>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-icon">
-                        <svg width="24" height="24"><use href="#icon-building"></use></svg>
+                    <button class="faq-toggle" aria-expanded="false" aria-controls="faq-5">
+                        <div class="faq-icon">
+                            <svg width="24" height="24"><use href="#icon-building"></use></svg>
+                        </div>
+                        <h3 class="faq-question">Can this be customized for our institution?</h3>
+                        <span class="faq-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-5">
+                        <p class="faq-answer">Absolutely! We work with colleges and universities to tailor the program to your curriculum needs, whether you need a single workshop or a series of sessions.</p>
                     </div>
-                    <h3 class="faq-question">Can this be customized for our institution?</h3>
-                    <p class="faq-answer">Absolutely! We work with colleges and universities to tailor the program to your curriculum needs, whether you need a single workshop or a series of sessions.</p>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-icon">
-                        <svg width="24" height="24"><use href="#icon-lightbulb"></use></svg>
+                    <button class="faq-toggle" aria-expanded="false" aria-controls="faq-6">
+                        <div class="faq-icon">
+                            <svg width="24" height="24"><use href="#icon-lightbulb"></use></svg>
+                        </div>
+                        <h3 class="faq-question">What makes Navigator Academy different?</h3>
+                        <span class="faq-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer-wrapper" id="faq-6">
+                        <p class="faq-answer">Our instructors are active industry professionals with real-world experience at top valuation firms. We combine technical training with career guidance, ensuring you're prepared for both the job market and technical interviews.</p>
                     </div>
-                    <h3 class="faq-question">What makes Navigator Academy different?</h3>
-                    <p class="faq-answer">Our instructors are active industry professionals with real-world experience at top valuation firms. We combine technical training with career guidance, ensuring you're prepared for both the job market and technical interviews.</p>
                 </div>
             </div>
         </div>
@@ -462,6 +517,52 @@
                     <div class="stat-description">Combined experience</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="contact-form" aria-label="Contact form">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Have questions? Send us a message and we'll get back to you soon.</p>
+            </div>
+            <form class="contact-form-wrapper" id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="institution">Institution/Organization</label>
+                    <input type="text" id="institution" name="institution">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" class="submit-button">
+                    <span class="button-text">Send Message</span>
+                    <span class="button-loader" style="display: none;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="form-success" id="formSuccess" style="display: none;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    <p>Thank you! Your message has been sent. We'll get back to you soon.</p>
+                </div>
+            </form>
         </div>
     </section>
 
