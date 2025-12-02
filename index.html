@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563eb'%3E%3Cpath d='M3 3v18h18M7 12l4-4 4 4 6-6'/%3E%3C/svg%3E">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -54,6 +55,79 @@
     </script>
 </head>
 <body>
+    <!-- SVG Icons Sprite -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="icon-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 3v18h18"/>
+        <path d="M7 12l4-4 4 4 6-6"/>
+      </symbol>
+      <symbol id="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <circle cx="12" cy="12" r="6"/>
+        <circle cx="12" cy="12" r="2"/>
+      </symbol>
+      <symbol id="icon-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+      </symbol>
+      <symbol id="icon-calculator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="4" y="2" width="16" height="20" rx="2"/>
+        <path d="M8 6h8M8 10h8M8 14h4M8 18h4"/>
+      </symbol>
+      <symbol id="icon-trending" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+        <polyline points="17 6 23 6 23 12"/>
+      </symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+        <circle cx="9" cy="7" r="4"/>
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+      </symbol>
+      <symbol id="icon-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+      </symbol>
+      <symbol id="icon-dollar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="12" y1="1" x2="12" y2="23"/>
+        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+        <polyline points="22 4 12 14.01 9 11.01"/>
+      </symbol>
+      <symbol id="icon-question" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+        <line x1="12" y1="17" x2="12.01" y2="17"/>
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <polyline points="22,6 12,13 2,6"/>
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+      </symbol>
+      <symbol id="icon-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 21h18"/>
+        <path d="M5 21V7l8-4v18"/>
+        <path d="M19 21V11l-6-4"/>
+        <path d="M9 9v0"/>
+        <path d="M9 12v0"/>
+        <path d="M9 15v0"/>
+        <path d="M9 18v0"/>
+      </symbol>
+      <symbol id="icon-lightbulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 21h6"/>
+        <path d="M12 3a6 6 0 0 0-6 6c0 2.5-1.5 4-1.5 4h15s-1.5-1.5-1.5-4a6 6 0 0 0-6-6z"/>
+        <path d="M12 17v-4"/>
+      </symbol>
+    </svg>
+    
     <!-- Skip to main content for accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Navigation -->
@@ -87,6 +161,11 @@
     <section id="home" class="hero" aria-label="Hero section">
         <div class="container">
             <div class="hero-content">
+                <div class="hero-visual">
+                    <div class="hero-icon-large">
+                        <svg width="120" height="120"><use href="#icon-chart"></use></svg>
+                    </div>
+                </div>
                 <h1 class="hero-title">Navigator Academy</h1>
                 <p class="hero-subtitle">Master Business Valuation & Financial Modeling</p>
                 <p class="hero-description">Transform your finance career with hands-on training from industry professionals. Learn the skills that top employers value most.</p>
@@ -110,17 +189,23 @@
             </div>
             <div class="about-content">
                 <div class="about-card">
-                    <div class="card-icon">📊</div>
+                    <div class="card-icon">
+                        <svg width="64" height="64"><use href="#icon-chart"></use></svg>
+                    </div>
                     <h3>Intensive 2-Day Program</h3>
                     <p>8 hours of focused, expert-led instruction covering the essential valuation skills that top employers demand</p>
                 </div>
                 <div class="about-card">
-                    <div class="card-icon">🎯</div>
+                    <div class="card-icon">
+                        <svg width="64" height="64"><use href="#icon-target"></use></svg>
+                    </div>
                     <h3>Career-Ready Skills</h3>
                     <p>Build the technical expertise and professional network you need to excel in valuation and finance careers</p>
                 </div>
                 <div class="about-card">
-                    <div class="card-icon">💼</div>
+                    <div class="card-icon">
+                        <svg width="64" height="64"><use href="#icon-briefcase"></use></svg>
+                    </div>
                     <h3>Real-World Practice</h3>
                     <p>Master concepts through hands-on case studies and practical exercises that mirror actual industry scenarios</p>
                 </div>
@@ -142,7 +227,12 @@
             </div>
             <div class="topics-grid">
                 <div class="topic-card">
-                    <div class="topic-number">01</div>
+                    <div class="topic-header">
+                        <div class="topic-number">01</div>
+                        <div class="topic-icon">
+                            <svg width="32" height="32"><use href="#icon-building"></use></svg>
+                        </div>
+                    </div>
                     <h3>Building Your Valuation Career</h3>
                     <ul>
                         <li><strong>Industry Landscape</strong> - Discover why valuation professionals are in high demand and enjoy exceptional job security across economic cycles, making it one of the most resilient career paths in finance.</li>
@@ -152,7 +242,12 @@
                     </ul>
                 </div>
                 <div class="topic-card">
-                    <div class="topic-number">02</div>
+                    <div class="topic-header">
+                        <div class="topic-number">02</div>
+                        <div class="topic-icon">
+                            <svg width="32" height="32"><use href="#icon-calculator"></use></svg>
+                        </div>
+                    </div>
                     <h3>Financial Foundations</h3>
                     <ul>
                         <li><strong>Time Value of Money & Financial Modeling</strong> - Master core concepts including present value, future value, and discount rates. Learn to build robust, professional-grade financial models that project cash flows and drive accurate valuations.</li>
@@ -161,7 +256,12 @@
                     </ul>
                 </div>
                 <div class="topic-card">
-                    <div class="topic-number">03</div>
+                    <div class="topic-header">
+                        <div class="topic-number">03</div>
+                        <div class="topic-icon">
+                            <svg width="32" height="32"><use href="#icon-trending"></use></svg>
+                        </div>
+                    </div>
                     <h3>Valuation Methodologies & Modeling</h3>
                     <ul>
                         <li><strong>Valuation Framework</strong> - Master the three core approaches: DCF, comparables, and precedent transactions. Learn to build and interpret professional-grade valuation models used by top firms.</li>
@@ -171,7 +271,12 @@
                     </ul>
                 </div>
                 <div class="topic-card">
-                    <div class="topic-number">04</div>
+                    <div class="topic-header">
+                        <div class="topic-number">04</div>
+                        <div class="topic-icon">
+                            <svg width="32" height="32"><use href="#icon-users"></use></svg>
+                        </div>
+                    </div>
                     <h3>Professional Excellence</h3>
                     <ul>
                         <li><strong>Real-World Case Studies</strong> - Analyze successful valuations and extract key lessons from actual deals. Apply valuation theory to complex, real business scenarios that mirror what you'll encounter in your career.</li>
@@ -246,19 +351,25 @@
                     <h3>Get in Touch</h3>
                     <div class="contact-info">
                         <div class="contact-item">
-                            <div class="contact-icon">👤</div>
+                            <div class="contact-icon">
+                                <svg width="24" height="24"><use href="#icon-user"></use></svg>
+                            </div>
                             <div>
                                 <strong>Max C. Hill</strong>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <div class="contact-icon">📧</div>
+                            <div class="contact-icon">
+                                <svg width="24" height="24"><use href="#icon-mail"></use></svg>
+                            </div>
                             <div>
                                 <a href="mailto:MaxC.Hill20@gmail.com">MaxC.Hill20@gmail.com</a>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <div class="contact-icon">📞</div>
+                            <div class="contact-icon">
+                                <svg width="24" height="24"><use href="#icon-phone"></use></svg>
+                            </div>
                             <div>
                                 <a href="tel:+19082858443">(908) 285-8443</a>
                             </div>
@@ -281,26 +392,44 @@
             </div>
             <div class="faq-grid">
                 <div class="faq-item">
+                    <div class="faq-icon">
+                        <svg width="24" height="24"><use href="#icon-question"></use></svg>
+                    </div>
                     <h3 class="faq-question">Who is this program designed for?</h3>
                     <p class="faq-answer">Our program is designed for students at all levels—from beginners exploring finance careers to those with some background looking to advance their valuation skills. We include foundational reviews to ensure everyone can follow along.</p>
                 </div>
                 <div class="faq-item">
+                    <div class="faq-icon">
+                        <svg width="24" height="24"><use href="#icon-book"></use></svg>
+                    </div>
                     <h3 class="faq-question">What materials do I need?</h3>
                     <p class="faq-answer">All materials are provided. You'll need a laptop with Excel installed. We'll provide templates, case studies, and all necessary resources for hands-on practice.</p>
                 </div>
                 <div class="faq-item">
+                    <div class="faq-icon">
+                        <svg width="24" height="24"><use href="#icon-check"></use></svg>
+                    </div>
                     <h3 class="faq-question">Will I receive a certificate?</h3>
                     <p class="faq-answer">Yes, participants receive a certificate of completion that demonstrates your training in business valuation and financial modeling—valuable for your resume and LinkedIn profile.</p>
                 </div>
                 <div class="faq-item">
+                    <div class="faq-icon">
+                        <svg width="24" height="24"><use href="#icon-trending"></use></svg>
+                    </div>
                     <h3 class="faq-question">How does this help my career?</h3>
                     <p class="faq-answer">You'll gain practical skills in valuation methodologies, financial modeling, and interview preparation. Our program also includes networking strategies and career development guidance to help you stand out to employers.</p>
                 </div>
                 <div class="faq-item">
+                    <div class="faq-icon">
+                        <svg width="24" height="24"><use href="#icon-building"></use></svg>
+                    </div>
                     <h3 class="faq-question">Can this be customized for our institution?</h3>
                     <p class="faq-answer">Absolutely! We work with colleges and universities to tailor the program to your curriculum needs, whether you need a single workshop or a series of sessions.</p>
                 </div>
                 <div class="faq-item">
+                    <div class="faq-icon">
+                        <svg width="24" height="24"><use href="#icon-lightbulb"></use></svg>
+                    </div>
                     <h3 class="faq-question">What makes Navigator Academy different?</h3>
                     <p class="faq-answer">Our instructors are active industry professionals with real-world experience at top valuation firms. We combine technical training with career guidance, ensuring you're prepared for both the job market and technical interviews.</p>
                 </div>
