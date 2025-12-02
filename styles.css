@@ -504,6 +504,23 @@ section:first-of-type {
     margin-bottom: 0;
 }
 
+.about-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.about-cta .cta-button {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+}
+
+.about-cta .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl);
+}
+
 /* Benefits Section */
 .benefits {
     background: white;
@@ -685,6 +702,53 @@ section:first-of-type {
 .topic-card li strong {
     color: var(--text-primary);
     font-weight: 600;
+}
+
+/* Why Choose Us Section */
+.why-choose {
+    background: white;
+    padding: 6rem 0;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.why-item {
+    position: relative;
+    padding: 2rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.why-item:hover {
+    background: var(--bg-light);
+    transform: translateY(-3px);
+}
+
+.why-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    opacity: 0.15;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.why-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.why-item p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.05rem;
 }
 
 /* Founders Section */
@@ -1509,6 +1573,10 @@ button:focus {
     .stats-cta .cta-button {
         font-size: 1.1rem;
         padding: 1rem 2rem;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
     }
 }
 
