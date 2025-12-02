@@ -442,7 +442,7 @@ section:first-of-type {
 }
 
 .about-description {
-    max-width: 900px;
+    max-width: 750px;
     margin: 0 auto;
     background: white;
     padding: 3rem;
@@ -453,9 +453,10 @@ section:first-of-type {
 
 .about-description p {
     color: var(--text-secondary);
-    font-size: 1.15rem;
-    line-height: 1.85;
-    margin-bottom: 1.75rem;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    text-align: left;
 }
 
 .about-description p:last-child {
@@ -555,11 +556,16 @@ section:first-of-type {
 
 .topic-card li {
     color: var(--text-secondary);
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
     padding-left: 1.5rem;
     position: relative;
-    line-height: 1.75;
+    line-height: 1.85;
     font-size: 1.05rem;
+    max-width: 100%;
+}
+
+.topic-card li:last-child {
+    margin-bottom: 0;
 }
 
 .topic-card li::before {
@@ -642,13 +648,14 @@ section:first-of-type {
 .founder-bio {
     text-align: left;
     color: var(--text-secondary);
-    line-height: 1.85;
+    line-height: 1.9;
     margin-bottom: 2rem;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+    max-width: 100%;
 }
 
 .founder-bio p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .founder-bio p:last-child {
