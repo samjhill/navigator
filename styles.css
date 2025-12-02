@@ -422,6 +422,7 @@ section:first-of-type {
 /* About Section */
 .about {
     background: var(--bg-light);
+    padding: 6rem 0;
 }
 
 .about-content {
@@ -524,7 +525,6 @@ section:first-of-type {
 /* Benefits Section */
 .benefits {
     background: white;
-    padding: 6rem 0;
 }
 
 .benefits-grid {
@@ -707,7 +707,6 @@ section:first-of-type {
 /* Why Choose Us Section */
 .why-choose {
     background: white;
-    padding: 6rem 0;
 }
 
 .why-grid {
@@ -1100,7 +1099,6 @@ section:first-of-type {
 /* FAQ Section */
 .faq {
     background: var(--bg-light);
-    padding: 6rem 0;
 }
 
 .faq-grid {
@@ -1271,7 +1269,6 @@ section:first-of-type {
 /* Testimonials Section */
 .testimonials {
     background: var(--bg-light);
-    padding: 6rem 0;
 }
 
 .testimonials-grid {
